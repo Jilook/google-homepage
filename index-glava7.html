@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Глава 7 DOM</title>
+    <script>
+    function init(){
+    var planet = document.getElementById('greenplanet');
+    planet.innerHTML = 'Red Alert';
+    planet.setAttribute('class', 'redtext');
+    }
+    function fuckOff() {
+        var fuckOff = document.getElementById('fuckOff');
+        var fuckAlt = fuckOff.getAttribute('alt');
+        alert(fuckAlt);
+    }
+        
+    window.onload = init;
+    window.onload = fuckOff;
+        
+    
+    </script>
+</head>
+
+<body>
+<h1 class="redtext">Изучаем дом</h1>
+    <p id="domZ">Абзац с идентификатором</p>
+    <p id='greenplanet'>All is well</p>
+    <p id="fuckOff" alt="fuck">Nothing to report</p>
+    <p>All system is OK</p>
+    
+
+</body>
+
+
+</html>
